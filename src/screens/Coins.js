@@ -106,7 +106,7 @@ const mapStateToProps = (state) => ({
         headerSubContainer: { flex: 5, backgroundColor: "#021B2C", borderRadius: 4, borderColor: "#aaa", borderWidth: 1 },
         headerIconContainer: { flex: 1, alignItems: "center", justifyContent: "center" },
         hedaerBtnContainer: { backgroundColor: "#021B2C", width: 50, padding: 10, borderRadius: 4, alignItems: "center" },
-        textInput: { color: "white" },
+        textInput: { color: "white", justifyContent: "center", alignItems: "center", flex: 1, marginLeft: 10 },
         icon: { color: "#ccc" }
     });
 

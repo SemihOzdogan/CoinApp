@@ -14,19 +14,18 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <Provider store = {store}>
+    <Provider store={store}>
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Coins">
           <Stack.Screen name="Coins" component={Coins}
             options={{
               title: "Coins", headerTitleAlign: 'center', headerLeft: null, headerTintColor: '#fff',
               headerStyle: {
-                backgroundColor: "#021B2C"
+                backgroundColor: "#021B2C",
               },
               headerTitle: () => (
-                <View style={{ justifyContent: "center", alignItems: "center", padding: 5 }}>
-                  <Image style={{ width: 60, height: 60, }} source={require("./src/img/coin.gif")} />
-                  <Text style={{ fontSize: 22, color: "#f5f5f5" }}>Coins</Text>
+                <View style={{ justifyContent: "center", alignItems: "center" }}>
+                  <Image style={{ width: 45, height: 45, }} source={require("./src/img/coin.gif")} />
                 </View>
               ),
             }}
